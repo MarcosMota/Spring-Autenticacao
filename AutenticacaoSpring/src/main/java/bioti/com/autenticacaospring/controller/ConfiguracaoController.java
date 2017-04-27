@@ -14,6 +14,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
 
 /**
  *
@@ -26,11 +27,10 @@ public class ConfiguracaoController {
     @Autowired
     ContextSecurity userContext;
 
-    @RequestMapping(value = {"/configuracao"}, method = RequestMethod.GET)
-    public String index(ModelMap model) {
-        if (userContext != null) {
-            model.addAttribute("user_logado", userContext.getUserLogado());
-        }
-        return "configuracao";
+    @RequestMapping(value = {"/admin/configuracao"}, method = RequestMethod.GET)
+    public ModelAndView index() {
+       ModelAndView model = new ModelAndView("/configuracao.html");
+        
+        return model;
     }
 }

@@ -1,7 +1,7 @@
 package bioti.com.autenticacaospring.security;
 
-import bioti.com.autenticacaospring.model.Usuario;
-import bioti.com.autenticacaospring.model.Perfil;
+import bioti.com.autenticacaospring.model.seguranca.Usuario;
+import bioti.com.autenticacaospring.model.seguranca.Perfil;
 import bioti.com.autenticacaospring.service.UserService;
 import java.util.ArrayList;
 import java.util.List;

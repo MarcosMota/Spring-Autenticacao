@@ -1,6 +1,6 @@
 package bioti.com.autenticacaospring.dao;
 
-import bioti.com.autenticacaospring.model.PersistentLogin;
+import bioti.com.autenticacaospring.model.seguranca.PersistentLogin;
 import java.util.Date;
 
 import org.hibernate.Criteria;

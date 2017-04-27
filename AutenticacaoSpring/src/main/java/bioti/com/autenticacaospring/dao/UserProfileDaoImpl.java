@@ -1,6 +1,6 @@
 package bioti.com.autenticacaospring.dao;
 
-import bioti.com.autenticacaospring.model.Perfil;
+import bioti.com.autenticacaospring.model.seguranca.Perfil;
 import java.util.List;
 
 import org.hibernate.Criteria;

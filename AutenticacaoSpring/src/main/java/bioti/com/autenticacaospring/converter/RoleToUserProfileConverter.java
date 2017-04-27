@@ -1,6 +1,6 @@
 package bioti.com.autenticacaospring.converter;
 
-import bioti.com.autenticacaospring.model.Perfil;
+import bioti.com.autenticacaospring.model.seguranca.Perfil;
 import bioti.com.autenticacaospring.service.UserProfileService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

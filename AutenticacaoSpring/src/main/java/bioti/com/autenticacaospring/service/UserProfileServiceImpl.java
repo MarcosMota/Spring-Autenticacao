@@ -1,7 +1,7 @@
 package bioti.com.autenticacaospring.service;
 
 import bioti.com.autenticacaospring.dao.UserProfileDao;
-import bioti.com.autenticacaospring.model.Perfil;
+import bioti.com.autenticacaospring.model.seguranca.Perfil;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;

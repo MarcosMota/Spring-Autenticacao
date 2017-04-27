@@ -7,7 +7,7 @@ package bioti.com.autenticacaospring.security;
 
 import bioti.com.autenticacaospring.dao.AbstractDao;
 import bioti.com.autenticacaospring.dao.UserProfileDao;
-import bioti.com.autenticacaospring.model.Perfil;
+import bioti.com.autenticacaospring.model.seguranca.Perfil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationTrustResolver;
 import org.springframework.security.core.Authentication;

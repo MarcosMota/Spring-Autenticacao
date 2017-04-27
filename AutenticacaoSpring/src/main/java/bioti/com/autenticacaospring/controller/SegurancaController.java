@@ -5,7 +5,7 @@
  */
 package bioti.com.autenticacaospring.controller;
 
-import bioti.com.autenticacaospring.model.Perfil;
+import bioti.com.autenticacaospring.model.seguranca.Perfil;
 import bioti.com.autenticacaospring.service.UserProfileService;
 import bioti.com.autenticacaospring.service.UserService;
 import bioti.com.autenticacaospring.templates.Layout;
@@ -34,7 +34,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 @RequestMapping("/")
  //@Layout(value = "none")
-@SessionAttributes("roles")
+@SessionAttributes("list_menu")
 public class SegurancaController {
 
     @Autowired
@@ -58,14 +58,14 @@ public class SegurancaController {
         return "accessoNegado";
     }
 
-    @RequestMapping(value = "/login", method = RequestMethod.GET)
+    @RequestMapping(value = {"/","/login"}, method = RequestMethod.GET)
     public ModelAndView loginPage() {
         ModelAndView model = new ModelAndView();
         if (isCurrentAuthenticationAnonymous()) {
             model.setViewName("/login.html");
          
         } else {
-            model.setViewName("/dashboard.html");
+            model.setViewName("/admin/dashboard.html");
         }
         return model;
     }
