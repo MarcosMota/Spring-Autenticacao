@@ -1,0 +1,24 @@
+{
+  "name": "Autenticacao-Spring",
+  "authors": [
+    "marcomota <marcos.lopes@trust.com.br>"
+  ],
+  "description": "Sistema de Autenticacao, ultilizando spring security",
+  "main": "",
+  "keywords": [
+    "autenticacao",
+    "spring",
+    "security",
+    "java"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
